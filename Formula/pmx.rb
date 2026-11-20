@@ -1,25 +1,25 @@
 class Pmx < Formula
   desc "Engineering metrics from git history, with a web dashboard"
-  homepage "https://github.com/kondfox/project-metrics"
-  version "0.1.0"
+  homepage "https://github.com/attrecto/project-metrics"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kondfox/project-metrics/releases/download/v0.1.0/pmx-aarch64-apple-darwin.tar.xz"
-      sha256 "8bfa0e8d9a8f488d382d6612035b11755b8b16d55f2c2c5d5eb6e99bfe1519f5"
+      url "https://github.com/attrecto/project-metrics/releases/download/v0.1.1/pmx-aarch64-apple-darwin.tar.xz"
+      sha256 "7be75e5bc983d2747a895003d73dc2bc2770b15701e7a2c7e78351bf51ae77e5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kondfox/project-metrics/releases/download/v0.1.0/pmx-x86_64-apple-darwin.tar.xz"
-      sha256 "6cd39ffef25ca9d5a28514d96146a0931194cffca3134b2809a0055375fd8e07"
+      url "https://github.com/attrecto/project-metrics/releases/download/v0.1.1/pmx-x86_64-apple-darwin.tar.xz"
+      sha256 "a420edec8b4f066dc3ca2dde95e373f9444aba546131e38bbb44105f444d9a9a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kondfox/project-metrics/releases/download/v0.1.0/pmx-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5b6f7fe683cf08ebc91a84601d7e05ae7179342b8c682318e7efe0bc531d060c"
+      url "https://github.com/attrecto/project-metrics/releases/download/v0.1.1/pmx-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1ce86b9a3c897b23c33b3b5a364cb3b8b7f0516856d63fe7461493cc5a0615fc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kondfox/project-metrics/releases/download/v0.1.0/pmx-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "dec401c5094c5f104fa59202c2a242bae828e3d18155b425847388346051593a"
+      url "https://github.com/attrecto/project-metrics/releases/download/v0.1.1/pmx-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "201ef0f9a1f7a0a505021c320af4585cc7a037b551270e04e9e6a1ea9bcad877"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
