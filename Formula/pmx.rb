@@ -1,25 +1,25 @@
 class Pmx < Formula
   desc "Engineering metrics from git history, with a web dashboard"
   homepage "https://github.com/attrecto/project-metrics"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/attrecto/project-metrics/releases/download/v0.1.1/pmx-aarch64-apple-darwin.tar.xz"
-      sha256 "7be75e5bc983d2747a895003d73dc2bc2770b15701e7a2c7e78351bf51ae77e5"
+      url "https://github.com/attrecto/project-metrics/releases/download/v0.1.2/pmx-aarch64-apple-darwin.tar.xz"
+      sha256 "5d486c23cf05d825e97941a45fc9b7fc5cb2d4ba5ac1aa9246219760a0c7a3f5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/attrecto/project-metrics/releases/download/v0.1.1/pmx-x86_64-apple-darwin.tar.xz"
-      sha256 "a420edec8b4f066dc3ca2dde95e373f9444aba546131e38bbb44105f444d9a9a"
+      url "https://github.com/attrecto/project-metrics/releases/download/v0.1.2/pmx-x86_64-apple-darwin.tar.xz"
+      sha256 "8830c0a1c3231aa083244b96851da6505b1017830e41df7cf2b493323594f128"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/attrecto/project-metrics/releases/download/v0.1.1/pmx-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1ce86b9a3c897b23c33b3b5a364cb3b8b7f0516856d63fe7461493cc5a0615fc"
+      url "https://github.com/attrecto/project-metrics/releases/download/v0.1.2/pmx-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "263cc257697b64ebeb19d875b5e2ca691f9709bb8f65df3952b44d4a38e23e10"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/attrecto/project-metrics/releases/download/v0.1.1/pmx-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "201ef0f9a1f7a0a505021c320af4585cc7a037b551270e04e9e6a1ea9bcad877"
+      url "https://github.com/attrecto/project-metrics/releases/download/v0.1.2/pmx-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "2f52152eb9cd382e4009197b6ac8b904a4fcfbf15e212f3938b0761a0bf7c20b"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
